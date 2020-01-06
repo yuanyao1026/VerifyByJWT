@@ -1,0 +1,32 @@
+{
+    "name": "topthink/think-annotation",
+    "description": "Annotation For ThinkPHP6",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "yunwuxin",
+            "email": "448901948@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "topthink/framework": "^6.0",
+        "doctrine/annotations": "^1.6",
+        "php-di/phpdoc-reader": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "think\\annotation\\": "src"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "think\\annotation\\Service"
+            ],
+            "config": {
+                "annotation": "src/config.php"
+            }
+        }
+    }
+}
